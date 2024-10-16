@@ -4,11 +4,11 @@ set -x -g XDG_CONFIG_HOME $HOME/.config
 set -x -g XDG_STATE_HOME $HOME/.local/state
 set -x -g XDG_CACHE_HOME $HOME/.cache
 
-if [ -t 0 ]
+# if [ -t 0 ]
 	# Activate powerline
 	source /usr/share/powerline/fish/powerline-setup.fish
 	powerline-setup
-end
+# end
 
 # Print logo
 set fish_greeting # Suppress default greeting
@@ -25,6 +25,7 @@ alias r=ranger
 # Remove clutter from home
 set -x -g ATOM_HOME $XDG_DATA_HOME/atom
 set -x -g GEM_HOME $XDG_DATA_HOME/gem
+set -x -g GEM_SPEC_CACHE $XDG_CACHE_HOME/gem
 set -x -g GNUPGHOME $XDG_DATA_HOME/gnupg
 set -x -g GRADLE_USER_HOME $XDG_DATA_HOME/gradle
 set -x -g GTK2_RC_FILES $XDG_CONFIG_HOME/gtk-2.0/gtkrc
@@ -32,6 +33,7 @@ set -x -g JUPYTER_CONFIG_DIR $XDG_CONFIG_HOME/jupyter
 set -x -g WINEPREFIX $XDG_DATA_HOME/wine32
 set -x -g RBENV_ROOT $XDG_DATA_HOME/rbenv
 set -x -g LESSHISTFILE $XDG_STATE_HOME/less/history
+set -x -g PSQL_HISTORY $XDG_DATA_HOME/psql_history
 set -x -g ERRFILE "$XDG_CACHE_HOME/X11/xsession-errors"
 set -x -g _JAVA_OPTIONS -Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
 set -x -g XCURSOR_PATH /usr/share/icons:"$XDG_DATA_HOME"/icons

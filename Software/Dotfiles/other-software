@@ -1,0 +1,15 @@
+# Ruby packages
+sudo gem install lolcat lolcommits
+
+# Calibre
+sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin
+
+# Low battery notification
+wget https://github.com/rjekker/i3-battery-popup/raw/master/i3-battery-popup -O $HOME/.local/bin/i3-battery-popup
+chmod +x $HOME/.local/bin/i3-battery-popup
+
+# PIP packages
+pip install --user numpy matplotlib ranger-fm scipy thefuck
+
+# even-better-ls
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/n0nvme/even-better-ls/master/install.sh)"

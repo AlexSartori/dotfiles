@@ -1,0 +1,5 @@
+Arduino IDE (https://www.arduino.cc/en/software)
+xdgurl
+even-better-ls (https://github.com/mnurzia/even-better-ls)
+Telegram (https://desktop.telegram.org/)
+
