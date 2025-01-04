@@ -4,12 +4,6 @@ set -x -g XDG_CONFIG_HOME $HOME/.config
 set -x -g XDG_STATE_HOME $HOME/.local/state
 set -x -g XDG_CACHE_HOME $HOME/.cache
 
-# if [ -t 0 ]
-	# Activate powerline
-	source /usr/share/powerline/fish/powerline-setup.fish
-	powerline-setup
-# end
-
 # Print logo
 set fish_greeting # Suppress default greeting
 fish_logo cyan blue white
