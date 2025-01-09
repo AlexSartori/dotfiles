@@ -143,7 +143,7 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+s exec spotify
 bindcode 179 exec spotify
 bindsym $mod+e exec thunar
-bindsym $mod+t exec telegram-desktop
+bindsym $mod+t exec /opt/Telegram/Telegram
 bindsym $mod+g exec gimp
 bindsym $mod+p exec arandr
 
@@ -194,8 +194,7 @@ bindsym $mod+Shift+e exec sh -c '[ $(echo -e "yes\nno"|dmenu -i -p "Terminate i3
 
 # Workspace- and window-specific applications
 # ------------------------------------------------------------------------------
-assign [class="Firefox"] 2
-for_window [class="TelegramDesktop" instance="telegram-desktop"] floating enable
+for_window [class="TelegramDesktop" instance="TelegramDesktop"] floating enable
 
 
 # Scratchpad
@@ -209,6 +208,5 @@ bindsym $mod+plus scratchpad show
 exec --no-startup-id nm-applet
 exec --no-startup-id i3-battery-popup -n &
 exec --no-startup-id redshift-gtk &
-exec --no-startup-id telegram-desktop
 exec --no-startup-id imwheel -b 45
 exec --no-startup-id xset s off -dpms
