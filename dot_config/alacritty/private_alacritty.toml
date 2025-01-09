@@ -1,0 +1,36 @@
+[bell]
+animation = "EaseOutExpo"
+color = "#ffffff"
+duration = 0
+
+[cursor]
+unfocused_hollow = true
+
+[cursor.style]
+blinking = "On"
+shape = "Block"
+
+[font]
+size = 10.0
+
+[font.bold]
+style = "Bold"
+
+[font.bold_italic]
+style = "Bold Italic"
+
+[font.italic]
+style = "Italic"
+
+[font.normal]
+family = "IosevkaTerm NFM"
+style = "Regular"
+
+[terminal.shell]
+program = "/usr/bin/fish"
+
+[window]
+decorations = "none"
+opacity = 1.0
+
+[terminal]
